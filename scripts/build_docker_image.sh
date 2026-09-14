@@ -2,6 +2,7 @@
 set -euo pipefail
 
 project_name=stm32-i2c-cpp-driver
-project_path=~/stm32-i2c-cpp-driver/docker
+script_dir=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
+repo_root=$(cd "${script_dir}/.." && pwd)
 
-docker build -f ${project_path}/builder.Dockerfile -t ${project_name}-builder:latest .
+docker build -f ${repo_root}/docker/builder.Dockerfile -t ${project_name}-builder:latest .
