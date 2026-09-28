@@ -6,11 +6,12 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-add_subdirectory(lib)                    always — portable, both builds
+add_subdirectory(lib)                    
 
-IF not cross-compiling:
+if(NOT CMAKE_CROSSCOMPILING)
     enable_testing()
     add_subdirectory(tests)
-ELSE:
+else()
     add_subdirectory(port/stm32f4)
     add_subdirectory(app)
+endif()

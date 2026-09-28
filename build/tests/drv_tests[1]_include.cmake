@@ -1,0 +1,5 @@
+if(EXISTS "/workdir/build/tests/drv_tests[1]_tests.cmake")
+  include("/workdir/build/tests/drv_tests[1]_tests.cmake")
+else()
+  add_test(drv_tests_NOT_BUILT drv_tests_NOT_BUILT)
+endif()
