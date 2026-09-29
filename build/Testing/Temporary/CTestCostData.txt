@@ -1,4 +1,4 @@
-DemoGroupTest.DemoTestNormalCase 1 0.00268447
-DemoGroupTest.DemoTestSameValue 2 0.00139284
-DemoGroupTest.DemoTestWrapAround 2 0.000837354
+DemoGroupTest.DemoTestNormalCase 2 0.00188562
+DemoGroupTest.DemoTestSameValue 3 0.000565512
+DemoGroupTest.DemoTestWrapAround 3 0.00101749
 ---
