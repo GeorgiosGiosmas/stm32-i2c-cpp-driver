@@ -1,0 +1,7 @@
+add_test([=[DemoGroupTest.DemoTestNormalCase]=]  /workdir/tests/drv_tests [==[--gtest_filter=DemoGroupTest.DemoTestNormalCase]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DemoGroupTest.DemoTestNormalCase]=]  PROPERTIES WORKING_DIRECTORY /workdir/tests SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[DemoGroupTest.DemoTestSameValue]=]  /workdir/tests/drv_tests [==[--gtest_filter=DemoGroupTest.DemoTestSameValue]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DemoGroupTest.DemoTestSameValue]=]  PROPERTIES WORKING_DIRECTORY /workdir/tests SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[DemoGroupTest.DemoTestWrapAround]=]  /workdir/tests/drv_tests [==[--gtest_filter=DemoGroupTest.DemoTestWrapAround]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DemoGroupTest.DemoTestWrapAround]=]  PROPERTIES WORKING_DIRECTORY /workdir/tests SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  drv_tests_TESTS DemoGroupTest.DemoTestNormalCase DemoGroupTest.DemoTestSameValue DemoGroupTest.DemoTestWrapAround)
